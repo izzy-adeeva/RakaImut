@@ -40,7 +40,7 @@ class Bot(Client):
         except Exception as a:
             self.LOGGER(__name__).warning(a)
             self.LOGGER(__name__).info(
-                "Bot Berhenti. Gabung Group https://t.me/demusplace untuk Bantuan"
+                "Bot Berhenti. Gabung Group https://t.me/ramsupportt untuk Bantuan"
             )
             sys.exit()
 
@@ -110,7 +110,7 @@ class Bot(Client):
                 if not link:
                     await self.export_chat_invite_link(FORCE_SUB_GROUP3)
                     link = (await self.get_chat(FORCE_SUB_GROUP3)).invite_link
-                self.invitelink3 = link
+                self.invitelink4 = link
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
                 self.LOGGER(__name__).warning(
